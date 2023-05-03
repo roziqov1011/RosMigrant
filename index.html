@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css">
+    <title>РосМигрант</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#">
+                <img src="./img/logo.svg" alt="">
+            </a>
+            <div class="lang__wrapper">
+                <h3>Изменить язык:</h3>
+                <div class="lang__inner">
+                    <button>
+                        <img src="./img/uz.png" alt="">
+                    </button>
+                    <button>
+                        <img src="./img/tj.png" alt="">
+                    </button>
+                    <button>
+                        <img src="./img/kr.png" alt="">
+                    </button>
+                    <button>
+                        <img src="./img/ru.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="main__inner">
+                <div class="main__info">
+                    <h2 class="main__title">С помощью приложения вы легко сможете:</h2>
+                    <ul class="main__list">
+                        <li class="main__item">
+                            <p>Оплатить и продлить патент</p>
+                        </li>
+                        <li class="main__item">
+                            <p>Оплатить пошлины</p>
+                        </li>
+                        <li class="main__item">
+                            <p>Погасить штрафы МВД и ГИБДД</p>
+                        </li>
+                        <li class="main__item">
+                            <p>Проверить задолженности ФНС И ФССП</p>
+                        </li>
+                        <li class="main__item">
+                            <p>Получать напоминания о необходимости оплатить задолженности</p>
+                        </li>
+                        <li class="main__item">
+                            <p>Проверить регистрацию или запрет на выезд из РФ</p>
+                        </li>
+                    </ul>
+                    <div class="qr__wrapper">
+                        <img class="qr__img" src="./img/qr.svg" alt="">
+                        <p class="qr__info">Для загрузки отсканируйте QR-код камерой телефона 
+                            или приложением для чтения QR-кодов</p>
+                    </div>
+
+                </div>
+
+                <div class="main__slider">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">Slide 1</div>
+                          <div class="swiper-slide">Slide 2</div>
+                          <div class="swiper-slide">Slide 3</div>
+                          <div class="swiper-slide">Slide 4</div>
+                          <div class="swiper-slide">Slide 5</div>
+                          <div class="swiper-slide">Slide 6</div>
+                          <div class="swiper-slide">Slide 7</div>
+                          <div class="swiper-slide">Slide 8</div>
+                          <div class="swiper-slide">Slide 9</div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          freeMode: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
+    <script src="./js/mian.js"></script>
+</body>
+</html>
