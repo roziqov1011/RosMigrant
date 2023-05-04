@@ -1,0 +1,49 @@
+.main__inner{
+    margin-top: 59px;
+    display: flex;
+
+}
+.main__info{
+    
+}
+.main__title{
+    font-style: normal;
+font-weight: 600;
+font-size: 27px;
+line-height: 33px;
+letter-spacing: 0.025em;
+max-width: 538px;
+}
+
+.main__list{
+    margin-top: 23px;
+}
+.main__item{
+    margin-left: 16px;
+    margin-bottom: 16px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0.025em;
+}
+
+.qr__wrapper{
+    display: flex;
+    align-items: center;
+    margin-top: 124px;
+}
+.qr__img{
+    width: 142px;
+    height: 142px;
+}
+.qr__info{
+    max-width: 254px;
+    font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 0.025em;
+color: rgba(69, 69, 69, 0.75);
+margin-left: 25px;
+}
+
