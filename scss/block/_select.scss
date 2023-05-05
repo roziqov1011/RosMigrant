@@ -1,0 +1,21 @@
+.lang__select__wrapper{
+    display: flex;
+    align-items: start;
+
+
+    .my__none{
+        display: none;
+    }
+
+    .my__flex{
+        display: flex;
+    }
+}
+
+
+.lang__select__inner{
+
+    display: none;
+    flex-direction: column;
+}
+

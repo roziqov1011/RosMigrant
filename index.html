@@ -11,34 +11,50 @@
 <body>
     <header class="header">
         <div class="container header__inner">
-            <a href="#">
+            <a class="header__logo" href="#">
                 <img src="./img/logo.svg" alt="">
             </a>
             <div class="lang__wrapper">
                 <h3>Изменить язык:</h3>
                 <div class="lang__inner">
-                    <button class="lang__active">
+                    <button id="uz" class="lang__btn lang__active">
                         <img src="./img/uz.svg " alt="">
                     </button>
-                    <button>
+                    <button id="tj" class="lang__btn">
                         <img src="./img/tj.svg " alt="">
                     </button>
-                    <button>
+                    <button id="kr" class="lang__btn">
                         <img src="./img/kr.svg " alt="">
                     </button>
-                    <button>
+                    <button id="ru" class="lang__btn">
                         <img src="./img/ru.svg " alt="">
                     </button>
                 </div>
+                <div class="lang__select__wrapper">
+                  <div class="lang__select__inner">
+                    <img src="./img/uz.png" alt="">
+                    <img src="./img/uz.png" alt="">
+                    <img src="./img/uz.png" alt="">
+                    <img src="./img/uz.png" alt="">
+                  </div>
+                  <img class="lang__img_default"  src="./img/kr.png" alt="">
+                  <select class="lang__select" name="" id="">
+                    <option value="uz">uz</option>
+                    <option value="tj">tj</option>
+                    <option value="kr">kr</option>
+                    <option value="ru">ru</option>
+                  </select>
+                </div>
+                
             </div>
         </div> 
     </header>
 
-    <main class="main">
+    <!-- <main class="main">
         <div class="container">
             <div class="main__inner">
                 <div class="main__info">
-                    <h2 class="main__title">С помощью приложения вы легко сможете:</h2>
+                    <h2 class="main__title">С помощью приложnения вы легко сможете:</h2>
                     <ul class="main__list">
                         <li class="main__item">
                             <p>Оплатить и продлить патент</p>
@@ -105,9 +121,9 @@
                 </div>
             </div>
         </div>
-    </main>
+    </main> -->
 
-    <a href="./karta.html">sdasdasdasdas</a>
+    <script src="./js/select.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {

@@ -26,9 +26,27 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
+@media (max-width: 1050px) {
+  .header__inner {
+    justify-content: space-around;
+  }
+}
+@media (max-width: 650px) {
+  .header__logo {
+    text-align: center;
+  }
+  .header__logo img {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
 .lang__wrapper {
+  padding: 24px;
+  background: rgba(4, 123, 239, 0.07);
+  border-radius: 9px;
   padding: 24px;
 }
 .lang__wrapper h3 {
@@ -37,6 +55,7 @@ body {
   line-height: 24px;
 }
 .lang__wrapper .lang__inner {
+  margin-top: 23px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,6 +65,7 @@ body {
   background-color: rgba(4, 123, 239, 0.0705882353);
   border-radius: 8px;
   overflow: hidden;
+  margin: 0 14px;
 }
 .lang__wrapper .lang__inner button img {
   width: 100%;
@@ -54,12 +74,23 @@ body {
      object-fit: cover;
 }
 .lang__wrapper .lang__inner .lang__active {
-  border: 8px solid rgba(4, 123, 239, 0.0705882353);
+  box-shadow: 0 0 0px 10px rgba(4, 121, 239, 0.1568627451);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url("../../img/main__bg.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: contain;
 }
 
 .main__inner {
   margin-top: 59px;
   display: flex;
+  align-items: end;
 }
 
 .main__title {
@@ -107,11 +138,17 @@ body {
 }
 
 .main__slider {
-  background-color: red;
-  display: flex;
-  align-items: end;
   height: 600px;
   width: 800px;
+}
+.main__slider .mySwiper {
+  display: flex !important;
+  align-items: end !important;
+  position: relative;
+}
+.main__slider .swiper {
+  display: flex !important;
+  align-items: end !important;
 }
 .main__slider .swiper-button-next, .main__slider .swiper-button-prev {
   width: 50px;
@@ -141,8 +178,8 @@ body {
 }
 
 .swiper-wrapper {
-  display: flex;
-  align-items: end;
+  display: flex !important;
+  align-items: end !important;
 }
 
 .swiper-slide-active {
@@ -158,7 +195,7 @@ body {
 .swiper-slide-next {
   z-index: 3;
   width: 250px !important;
-  transform: scale(1.1) !important;
+  transform: scale(1.1) translateY(-75px) !important;
 }
 .swiper-slide-next img {
   height: 100%;
@@ -181,6 +218,8 @@ body {
   display: block;
   width: 100%;
   height: 80%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .swiper-pagination {
@@ -192,7 +231,8 @@ body {
   border-radius: 8px;
   padding: 11px;
   left: 55% !important;
-  transform: translate(-70px);
+  bottom: 90px !important;
+  transform: translate(-75px);
 }
 .swiper-pagination span {
   background-color: #fff !important;
@@ -203,4 +243,20 @@ body {
 .swiper-pagination .swiper-pagination-bullet {
   background-color: #fff;
   opacity: 1;
+}
+
+.lang__select__wrapper {
+  display: flex;
+  align-items: start;
+}
+.lang__select__wrapper .my__none {
+  display: none;
+}
+.lang__select__wrapper .my__flex {
+  display: flex;
+}
+
+.lang__select__inner {
+  display: none;
+  flex-direction: column;
 }/*# sourceMappingURL=main.css.map */
