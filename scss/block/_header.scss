@@ -59,11 +59,13 @@
 
 @media (max-width: 500px) {
    .lang__wrapper {
+    margin: 0 24px;
     margin-top: 37px;
     padding: 17px;
     background: rgba(4, 123, 239, 0.07);
     border-radius: 9px;
     width: 100%;
+
     .lang__wrapper__title{
         display: none;
     }
