@@ -15,7 +15,7 @@
                 <img src="./img/logo.svg" alt="">
             </a>
             <div class="lang__wrapper">
-                <h3>Изменить язык:</h3>
+                <h3 class="lang__wrapper__title">Изменить язык:</h3>
                 <div class="lang__inner">
                     <button id="uz" class="lang__btn lang__active">
                         <img src="./img/uz.svg " alt="">
@@ -31,18 +31,13 @@
                     </button>
                 </div>
                 <div class="lang__select__wrapper">
-                  <div class="lang__select__inner">
-                    <img src="./img/uz.png" alt="">
-                    <img src="./img/uz.png" alt="">
-                    <img src="./img/uz.png" alt="">
-                    <img src="./img/uz.png" alt="">
-                  </div>
-                  <img class="lang__img_default"  src="./img/kr.png" alt="">
+                  <p>Язык:</p>
+                  <img class="lang__img_default"  src="./img/uz.png" alt="">
                   <select class="lang__select" name="" id="">
-                    <option value="uz">uz</option>
-                    <option value="tj">tj</option>
-                    <option value="kr">kr</option>
-                    <option value="ru">ru</option>
+                    <option value="uz">O'zbek tili</option>
+                    <option value="tj">Тоҷикӣ</option>
+                    <option value="kr">Кыргызча</option>
+                    <option value="ru">Русский</option>
                   </select>
                 </div>
                 
@@ -50,7 +45,7 @@
         </div> 
     </header>
 
-    <!-- <main class="main">
+    <main class="main">
         <div class="container">
             <div class="main__inner">
                 <div class="main__info">
@@ -83,6 +78,13 @@
 
                 </div>
 
+                <div class="main__mobile__store">
+                  <h2>Загрузить приложение</h2>
+                  <div class="main__mobile__inner">
+                    <img src="./img/apk.svg" alt="">
+                    <img src="./img/ios.svg" alt="">
+                  </div>
+                </div>
                 <div class="main__slider">
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
@@ -121,11 +123,12 @@
                 </div>
             </div>
         </div>
-    </main> -->
+    </main>
 
     <script src="./js/select.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
+      if(window.innerWidth >= 600){
         var swiper = new Swiper(".mySwiper", {
           slidesPerView: 3,
           spaceBetween: 80,
@@ -139,6 +142,23 @@
                 prevEl: ".swiper-button-prev",
             },
         });
+      }
+      if(window.innerWidth <= 600){
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 80,
+          freeMode: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+      }
+        
       </script>
     <script src="./js/mian.js"></script>
 </body>
