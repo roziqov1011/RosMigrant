@@ -3,33 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="/img/logIcon.svg">
+    <link rel="apple-touch-icon" href="/img/logIcon.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/main.min.css">
-    <title>РосМигрант</title>
+    <title >РосМигрант</title>
 </head>
 <body>
     <header class="header">
         <div class="container header__inner">
-            <a href="#">
+            <a class="header__logo" href="#">
                 <img src="./img/logo.svg" alt="">
             </a>
             <div class="lang__wrapper">
-                <h3>Изменить язык:</h3>
+                <h3 class="lang__wrapper__title">Изменить язык:</h3>
                 <div class="lang__inner">
-                    <button >
-                        <img class="lang__active" src="./img/uz.svg " alt="">
+                    <button id="uz" class="lang__btn lang__active">
+                        <img src="./img/uz.svg " alt="">
                     </button>
-                    <button>
+                    <button id="tj" class="lang__btn">
                         <img src="./img/tj.svg " alt="">
                     </button>
-                    <button>
+                    <button id="kr" class="lang__btn">
                         <img src="./img/kr.svg " alt="">
                     </button>
-                    <button>
+                    <button id="ru" class="lang__btn">
                         <img src="./img/ru.svg " alt="">
                     </button>
                 </div>
+                <div class="lang__select__wrapper">
+                  <p>Язык:</p>
+                  <img class="lang__img_default"  src="./img/uz.png" alt="">
+                  <select class="lang__select" name="" id="">
+                    <option value="uz">O'zbek tili</option>
+                    <option value="tj">Тоҷикӣ</option>
+                    <option value="kr">Кыргызча</option>
+                    <option value="ru">Русский</option>
+                  </select>
+                </div>
+                
             </div>
         </div> 
     </header>
@@ -38,7 +51,7 @@
         <div class="container">
             <div class="main__inner">
                 <div class="main__info">
-                    <h2 class="main__title">С помощью приложения вы легко сможете:</h2>
+                    <h2 class="main__title">С помощью приложnения вы легко сможете:</h2>
                     <ul class="main__list">
                         <li class="main__item">
                             <p>Оплатить и продлить патент</p>
@@ -67,37 +80,87 @@
 
                 </div>
 
+                <div class="main__mobile__store">
+                  <h2>Загрузить приложение</h2>
+                  <div class="main__mobile__inner">
+                    <img src="./img/apk.svg" alt="">
+                    <img src="./img/ios.svg" alt="">
+                  </div>
+                </div>
                 <div class="main__slider">
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
-                          <div class="swiper-slide">Slide 1</div>
-                          <div class="swiper-slide">Slide 2</div>
-                          <div class="swiper-slide">Slide 3</div>
-                          <div class="swiper-slide">Slide 4</div>
-                          <div class="swiper-slide">Slide 5</div>
-                          <div class="swiper-slide">Slide 6</div>
-                          <div class="swiper-slide">Slide 7</div>
-                          <div class="swiper-slide">Slide 8</div>
-                          <div class="swiper-slide">Slide 9</div>
+                          <div class="swiper-slide">
+                            <img src="./img/phone.png" alt="">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./img/phone.png" alt="">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./img/phone.png" alt="">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./img/phone.png" alt="">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./img/phone.png" alt="">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./img/phone.png" alt="">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./img/phone.png" alt="">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./img/phone.png" alt="">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./img/phone.png" alt="">
+                          </div>
                         </div>
                         <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
                       </div>
                 </div>
             </div>
         </div>
     </main>
 
+    <script src="./js/select.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
+      if(window.innerWidth >= 600){
         var swiper = new Swiper(".mySwiper", {
           slidesPerView: 3,
-          spaceBetween: 30,
+          spaceBetween: 80,
           freeMode: true,
           pagination: {
             el: ".swiper-pagination",
             clickable: true,
           },
+          navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
         });
+      }
+      if(window.innerWidth <= 600){
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 80,
+          freeMode: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+      }
+        
       </script>
     <script src="./js/mian.js"></script>
 </body>

@@ -1,0 +1,22 @@
+
+.lang__select__wrapper{
+    display: none;
+}
+
+@media (max-width: 500px) {
+    .lang__select__wrapper{
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        select{
+            border: none;
+            background-color: transparent;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            color: black;
+            outline: none;
+        }
+    }
+}

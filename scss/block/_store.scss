@@ -1,0 +1,27 @@
+.main__mobile__store{
+    padding: 0 24px;
+    margin-top: 80px;
+    display: none;
+        width: 100%;
+    h2{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 22px;
+    }
+    .main__mobile__inner{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        img{
+            width: 163px;
+            height: 48px;
+        }
+    }
+}
+@media (max-width: 600px) {
+    .main__mobile__store{
+        display: block;
+    }
+}
