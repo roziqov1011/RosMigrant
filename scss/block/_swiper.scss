@@ -1,4 +1,10 @@
-
+@media (min-width: 600px) {
+    .main__slider{
+      .swiper-button-next, .swiper-button-prev{
+        top: 400px;
+      }
+    }
+}
 .main__slider{
   
   height: 600px;
@@ -192,5 +198,6 @@
     padding: 10px;
   }
 }
+
 
 

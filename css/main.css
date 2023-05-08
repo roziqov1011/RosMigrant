@@ -186,6 +186,11 @@ body {
     flex-wrap: wrap;
   }
 }
+@media (min-width: 600px) {
+  .main__slider .swiper-button-next, .main__slider .swiper-button-prev {
+    top: 400px;
+  }
+}
 .main__slider {
   height: 600px;
   width: 800px;
