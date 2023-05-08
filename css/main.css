@@ -295,6 +295,17 @@ body {
   opacity: 0.6;
 }
 
+.main__slider .swiper-button-next::after, .main__slider .swiper-button-prev::after {
+  font-weight: bold !important;
+  font-size: 15px;
+}
+.main__slider .swiper-button-next::after {
+  margin-left: 4px;
+}
+.main__slider .swiper-button-prev::after {
+  margin-right: 4px;
+}
+
 @media (max-width: 600px) {
   .swiper {
     padding: 0px 0px;

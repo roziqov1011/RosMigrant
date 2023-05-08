@@ -114,6 +114,26 @@
   transform: translate(-75px);
 }
 
+.main__slider{
+  .swiper-button-next, .swiper-button-prev {
+
+
+   &::after{
+    font-weight: bold !important;
+    font-size: 15px;
+   }
+  }
+  .swiper-button-next {
+    &::after{
+     margin-left: 4px;
+    }
+   }
+   .swiper-button-prev {
+     &::after{
+      margin-right: 4px;
+     }
+    }
+}
 @media (max-width: 600px) {
   .swiper{
     padding: 0px 0px;
