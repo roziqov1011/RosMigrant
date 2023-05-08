@@ -314,11 +314,14 @@ body {
     font-weight: bold !important;
     font-size: 20px;
   }
+  .main__slider .swiper-button-next {
+    right: 35px;
+  }
   .main__slider .swiper-button-next::after {
     margin-left: 4px;
   }
   .main__slider .swiper-button-prev {
-    left: 0px;
+    left: 30px;
   }
   .main__slider .swiper-button-prev::after {
     margin-right: 4px;

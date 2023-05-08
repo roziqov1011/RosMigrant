@@ -136,12 +136,13 @@
      }
     }
     .swiper-button-next {
+      right: 35px;
       &::after{
        margin-left: 4px;
       }
      }
      .swiper-button-prev {
-       left: 0px;
+       left: 30px;
        &::after{
         margin-right: 4px;
        }
