@@ -292,7 +292,7 @@ body {
 }
 .swiper-pagination .swiper-pagination-bullet {
   background-color: #fff;
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 @media (max-width: 600px) {
@@ -311,6 +311,7 @@ body {
     color: white !important;
   }
   .main__slider .swiper-button-next::after, .main__slider .swiper-button-prev::after {
+    font-weight: bold !important;
     font-size: 20px;
   }
   .main__slider .swiper-button-next::after {
@@ -330,7 +331,7 @@ body {
     transform: scale(1) translateY(0px) !important;
   }
   .swiper-slide-next ~ .swiper-slide {
-    transform: translateX(0px) !important;
+    transform: translateX(160px) !important;
   }
   .swiper-pagination {
     width: 150px !important;
@@ -338,6 +339,11 @@ body {
     left: 50% !important;
     bottom: 0px !important;
     transform: translate(-75px);
+  }
+  .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    font-weight: bold;
+    font-size: 25px;
+    padding: 10px;
   }
 }
 .lang__select__wrapper {

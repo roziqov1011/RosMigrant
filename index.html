@@ -111,12 +111,6 @@
                           <div class="swiper-slide">
                             <img src="./img/phone.png" alt="">
                           </div>
-                          <div class="swiper-slide">
-                            <img src="./img/phone.png" alt="">
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="./img/phone.png" alt="">
-                          </div>
                         </div>
                         <div class="swiper-pagination"></div>
                         <div class="swiper-button-next"></div>
@@ -148,8 +142,8 @@
       if(window.innerWidth <= 600){
         var swiper = new Swiper(".mySwiper", {
           slidesPerView: 1,
-          spaceBetween: 80,
-          freeMode: true,
+          spaceBetween: 30,
+          loop: true,
           pagination: {
             el: ".swiper-pagination",
             clickable: true,
