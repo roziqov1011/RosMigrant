@@ -371,6 +371,19 @@ body {
 }
 .lang__select__wrapper {
   display: none;
+  position: relative;
+}
+
+.lang__select__wrapper::after {
+  position: absolute;
+  right: 0;
+  content: "";
+  width: 12px;
+  height: 8px;
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../img/down.svg");
 }
 
 @media (max-width: 500px) {
@@ -380,6 +393,7 @@ body {
     justify-content: space-around;
   }
   .lang__select__wrapper select {
+    -webkit-appearance: none;
     border: none;
     background-color: transparent;
     font-weight: 600;
