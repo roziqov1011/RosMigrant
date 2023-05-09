@@ -88,36 +88,38 @@
                   </div>
                 </div>
                 <div class="main__slider">
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <img src="./img/phone3.png" alt="">
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="./img/phone.png" alt="">
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="./img/phone2.png" alt="">
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="./img/phone3.png" alt="">
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="./img/phone.png" alt="">
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="./img/phone2.png" alt="">
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="./img/phone.png" alt="">
-                          </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                       <div class="novigation__wrapper">
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                       </div>
+                  <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="./img/phone.png" alt="">
                       </div>
+                      <div class="swiper-slide">
+                        <img src="./img/phone2.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/phone3.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/phone.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/phone2.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/phone3.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/phone.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/phone2.png" alt="">
+                      </div>
+                      
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                  </div>
                 </div>
             </div>
         </div>
@@ -129,32 +131,31 @@
       if(window.innerWidth >= 600){
         var swiper = new Swiper(".mySwiper", {
           slidesPerView: 3,
-          spaceBetween: 80,
-          freeMode: true,
+          spaceBetween: 30,
           loop: true,
           pagination: {
             el: ".swiper-pagination",
             clickable: true,
           },
           navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
         });
       }
       if(window.innerWidth <= 600){
         var swiper = new Swiper(".mySwiper", {
           slidesPerView: 1,
-          spaceBetween: 80,
+          spaceBetween: 30,
           loop: true,
           pagination: {
             el: ".swiper-pagination",
             clickable: true,
           },
           navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
         });
       }
         
