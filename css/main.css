@@ -198,7 +198,7 @@ body {
 @media (max-width: 600px) {
   .main__slider {
     margin-top: 40px;
-    height: 580px;
+    height: 650px;
     width: 100%;
   }
   .main__slider .swiper-slide img {
@@ -209,13 +209,13 @@ body {
        object-fit: contain;
   }
   .swiper-button-next, .swiper-button-prev {
-    top: 400px !important;
+    top: 300px !important;
   }
   .swiper-button-next {
-    right: 8px;
+    right: 15px;
   }
   .swiper-button-prev {
-    left: 8px;
+    left: 15px;
   }
 }
 .swiper {
